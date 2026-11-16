@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #232323;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 24px 0;
+  background-color: steelblue;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  transition: background-color 0.3s;
+}
+
+#colorDisplay {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+#stripe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  height: 60px;
+  background-color: #fff;
+}
+
+#message {
+  display: inline-block;
+  width: 180px;            /* ancho fijo: el mensaje no mueve a los demás */
+  color: #232323;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  outline: none;           /* sin línea azul al hacer click */
+  background: none;
+  padding: 0 12px;
+  height: 100%;
+  color: steelblue;
+  font: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover,
+button.selected {
+  background-color: steelblue;
+  color: #fff;
+}
+
+#container {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.square {
+  width: 30%;
+  padding-bottom: 30%;     /* cuadrado perfecto */
+  margin-bottom: 3%;
+  border-radius: 10%;
+  background-color: #232323;
+  cursor: pointer;
+  transition: background-color 0.6s;  /* efecto al desaparecer */
+}
